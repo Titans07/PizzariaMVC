@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Pizzaria.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,15 @@ namespace Pizzaria.Controllers
 {
     public class PizzasController : Controller
     {
-        public IActionResult Index()
+        private PizzariaDbContext _context;
+
+        public PizzasController(PizzariaDbContext context)
         {
-            return View();
+            _context = context;
         }
+
+        public IActionResult Index() => View(_context.Pizzas);
+
+
     }
 }
