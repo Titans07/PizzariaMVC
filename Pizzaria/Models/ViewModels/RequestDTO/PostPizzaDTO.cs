@@ -25,7 +25,7 @@ namespace Pizzaria.Models.ViewModels.RequestDTO
         [Required(ErrorMessage = "Tamanho é obrigatório!")]
         public int TamanhoId { get; set; }
 
-        [Display(Name = "Foto")]
+        [Display(Name = "Informe o(s) Sabor(res) da pizza")]
         [Required(ErrorMessage = "A foto é obrigatória!")]
         public List<int> SaboresId { get; set; }
 

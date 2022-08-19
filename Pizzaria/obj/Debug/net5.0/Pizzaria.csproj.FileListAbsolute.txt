@@ -55,8 +55,6 @@ C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\scopedc
 C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Pizzaria.TagHelpers.input.cache
 C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Pizzaria.TagHelpers.output.cache
 C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Pizzaria.RazorCoreGenerate.cache
-C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -70,3 +68,15 @@ C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Pizzari
 C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\ref\Pizzaria.dll
 C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Pizzaria.pdb
 C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Pizzaria.genruntimeconfig.cache
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Pizzas\Atualizar.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Pizzas\Criar.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Pizzas\Deletar.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Pizzas\Detalhes.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Pizzas\Index.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Sabores\Atualizar.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Sabores\Criar.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Sabores\Deletar.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Sabores\Detalhes.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Sabores\Index.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Shared\NotFound.cshtml.g.cs
+C:\Users\gabriel.smerola\source\repos\Pizzaria\Pizzaria\obj\Debug\net5.0\Razor\Views\Shared\_NovoItem.cshtml.g.cs
