@@ -29,9 +29,9 @@ namespace Pizzaria.Models
 
         public void AlterarDados(string fotoURL, string nome, decimal preco, int tamanhoId)
         {
+            FotoURL = fotoURL;
             Nome = nome;
             Preco = preco;
-            FotoURL = fotoURL;
             TamanhoId = tamanhoId;
             DataAlteracao = DateTime.Now;
         }
