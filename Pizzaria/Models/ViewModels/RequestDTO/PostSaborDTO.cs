@@ -8,10 +8,10 @@ namespace Pizzaria.Models.ViewModels.RequestDTO
 {
     public class PostSaborDTO
     {
-        [Required(ErrorMessage = "Nome do Ator é Obrigatório!")]
-        public string Nome { get; set; }
-
         [Required(ErrorMessage = "Imagem obrigatória")]
         public string FotoURL { get; set; }
+
+        [Required(ErrorMessage = "Nome do Ator é Obrigatório!")]
+        public string Nome { get; set; }
     }
 }

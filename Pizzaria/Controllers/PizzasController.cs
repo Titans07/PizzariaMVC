@@ -40,8 +40,8 @@ namespace Pizzaria.Controllers
 
             Pizza pizza = new Pizza
                 (
-                    pizzaDTO.Nome,
                     pizzaDTO.FotoURL,
+                    pizzaDTO.Nome,
                     pizzaDTO.Preco,
                     pizzaDTO.TamanhoId
                 );
@@ -94,10 +94,10 @@ namespace Pizzaria.Controllers
 
             result.AlterarDados
                 (
+                pizzaDto.FotoURL,
                 pizzaDto.Nome,
                 pizzaDto.Preco,
-                pizzaDto.TamanhoId,
-                pizzaDto.FotoURL
+                pizzaDto.TamanhoId
                 );
 
             _context.Update(result);

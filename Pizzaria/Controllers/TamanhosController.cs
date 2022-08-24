@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Pizzaria.Controllers
 {
-    public class CinemasController : Controller
+    public class TamanhosController : Controller
     {
         private PizzariaDbContext _context;
 
-        public CinemasController(PizzariaDbContext context)
+        public TamanhosController(PizzariaDbContext context)
         {
             _context = context;
         }
@@ -61,10 +61,10 @@ namespace Pizzaria.Controllers
         }
 
         [HttpPost]
-        public IActionResult Atualizar(int id, PostTamanhoDTO cinemaDTO)
+        public IActionResult Atualizar(int id, PostTamanhoDTO tamanhoDTO)
         {
-            var result = _context.Tamanhos.FirstOrDefault(cinema => cinema.Id == id);
-            result.AlterarDados(cinemaDTO.Nome);
+            var result = _context.Tamanhos.FirstOrDefault(t => t.Id == id);
+            result.AlterarDados(tamanhoDTO.Nome);
             _context.Tamanhos.Update(result);
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));

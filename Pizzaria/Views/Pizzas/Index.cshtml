@@ -1,56 +1,56 @@
 ﻿@model IEnumerable<Pizza>
 
 @{
-    ViewData["Title"] = "Lista de Pizzas";
+    ViewData["Title"] = "Índice Pizza";
 }
 
-@*@Html.Partial("_NovoItem", "Pizza")*@
 <partial name="_NovoItem" model="nameof(Pizza)" />
 
 <div class="row">
-    @foreach (var item in Model)
-    {
-        <div class="col-md-4 col-xs-6 border-primary mb-3">
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-12">
-                        <div class="card-header text-white bg-info">
-                            <p class="card-text">
-                                <h5 class="card-title">
-                                    @item.Nome
-                                </h5>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <a asp-action="Detalhes" asp-route-id="@item.Id"><img src="@item.FotoURL" width="100%" alt="@item.Nome"></a>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card-body">
-                            <p class="card-text ">
-                                <b>Situação: </b>
-                                <span class="badge bg-primary text-white">Disponível</span>
-                            </p>
+    <div class="col-md-10 offset-md-1">
 
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="card-footer ">
-                            <p class="card-text">
-                                <a class="btn btn-outline-primary float-right" asp-action="Detalhes" asp-route-id="@item.Id">
-                                    <i class="fa-solid fa-eye"></i> Detalhes
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Ações</th>
+                    <th>@Html.DisplayNameFor(model => model.FotoURL)</th>
+                    <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                    <th>@Html.DisplayNameFor(model => model.Preco)</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var pizza in Model)
+                {
+
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column">
+                                <a class="btn btn-success" asp-action="Atualizar" asp-route-id="@pizza.Id">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    Editar
                                 </a>
-                                <a class="btn btn-success text-white"
-                                   asp-controller="Pedidos"
-                                   asp-action="AdicionarCarrinho"
-                                   asp-route-id="@item.Id">
-                                    <i class="fa-solid fa-cart-arrow-down"></i> Adicionar
+
+                                <a class="btn btn-primary mt-1" asp-action="Detalhes" asp-route-id="@pizza.Id">
+                                    <i class="fa-solid fa-eye"></i>
+                                    Ver
                                 </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    }
+
+                                <a class="btn btn-danger mt-1" asp-action="Deletar" asp-route-id="@pizza.Id">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    Excluir
+                                </a>
+                            </div>
+                        </td>
+                        <td class="align-middle">
+                            <img src="@pizza.FotoURL" style="max-width:100px" alt="@pizza.Nome">
+                        </td>
+                        <td class="align-middle">@pizza.Nome</td>
+                        <td class="align-middle">@pizza.Preco</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
 </div>

@@ -7,7 +7,7 @@ namespace Pizzaria.Models
 {
     public class Sabor : IEntidade
     {
-        public Sabor(string fotoURL, string nome)
+        public Sabor(string nome, string fotoURL)
         {
             DataAlteracao = DataCadastro;
             DataCadastro = DateTime.Now;
